@@ -1,0 +1,1 @@
+# ishidue-ai-avatars

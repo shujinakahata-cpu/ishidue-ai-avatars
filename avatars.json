@@ -1,0 +1,126 @@
+{
+  "$comment": "ISHIDUE AI アバターのカタログ。scripts/build_prompts.py がこの avatars[].role を読んで prompts/out/*.txt を生成する。アバターを追加するときは、ここに 1 件足して prompts/subjects/<role>.md を作る。",
+  "target_style": "felt",
+  "styles": {
+    "felt": "羊毛フェルト人形風。シリーズの正式な画風。仕様は docs/style-guide.md",
+    "photoreal": "実写風ビジネスヘッドショット。旧画風で、フェルト風への差し替え対象"
+  },
+  "statuses": {
+    "current": "画風が target_style に一致しており、そのまま使える",
+    "needs_refresh": "画風が target_style と違うため作り直しが必要。現画像は人物の参照元としてのみ使う"
+  },
+  "known_issues": {
+    "extension_mismatch": "全 9 枚が拡張子 .jpg で中身は PNG (RGBA)。外部から raw.githubusercontent.com 経由で参照されている可能性があるため未改名",
+    "title_ambiguity": "CSO と CLO の日本語役職名は要確認。CSO は戦略/セキュリティ/サステナビリティ、CLO は法務/人材開発のいずれもあり得るため、暫定値を入れてある"
+  },
+  "avatars": [
+    {
+      "role": "ceo",
+      "title_ja": "最高経営責任者",
+      "title_en": "Chief Executive Officer",
+      "file": "ceo.jpg",
+      "format": "png",
+      "width": 1816,
+      "height": 1744,
+      "style": "felt",
+      "status": "current",
+      "notes": "フェルト風の基準画像。迷ったらこの 1 枚に合わせる"
+    },
+    {
+      "role": "coo",
+      "title_ja": "最高執行責任者",
+      "title_en": "Chief Operating Officer",
+      "file": "coo.jpg",
+      "format": "png",
+      "width": 936,
+      "height": 1014,
+      "style": "photoreal",
+      "status": "needs_refresh",
+      "notes": ""
+    },
+    {
+      "role": "cfo",
+      "title_ja": "最高財務責任者",
+      "title_en": "Chief Financial Officer",
+      "file": "cfo.jpg",
+      "format": "png",
+      "width": 924,
+      "height": 1014,
+      "style": "photoreal",
+      "status": "needs_refresh",
+      "notes": ""
+    },
+    {
+      "role": "cto",
+      "title_ja": "最高技術責任者",
+      "title_en": "Chief Technology Officer",
+      "file": "cto.jpg",
+      "format": "png",
+      "width": 934,
+      "height": 1010,
+      "style": "photoreal",
+      "status": "needs_refresh",
+      "notes": "眼鏡あり。フェルト/針金の手作り小物として作り、金属光沢を出さない"
+    },
+    {
+      "role": "cmo",
+      "title_ja": "最高マーケティング責任者",
+      "title_en": "Chief Marketing Officer",
+      "file": "cmo.jpg",
+      "format": "png",
+      "width": 930,
+      "height": 1014,
+      "style": "photoreal",
+      "status": "needs_refresh",
+      "notes": "現画像の左下に UI の「ステム設定」という文字が写り込んでいる。作り直し時に持ち込まないこと"
+    },
+    {
+      "role": "cso",
+      "title_ja": "最高戦略責任者",
+      "title_en": "Chief Strategy Officer",
+      "file": "cso.jpg",
+      "format": "png",
+      "width": 928,
+      "height": 1010,
+      "style": "photoreal",
+      "status": "needs_refresh",
+      "notes": "現画像の左下に黒い点（UI要素の切れ端）がある。役職名は要確認"
+    },
+    {
+      "role": "chro",
+      "title_ja": "最高人事責任者",
+      "title_en": "Chief Human Resources Officer",
+      "file": "chro.jpg",
+      "format": "png",
+      "width": 844,
+      "height": 934,
+      "style": "photoreal",
+      "status": "needs_refresh",
+      "notes": "現画像の右下に別画像のサムネイルが写り込んでいる。作り直し時に持ち込まないこと"
+    },
+    {
+      "role": "clo",
+      "title_ja": "最高法務責任者",
+      "title_en": "Chief Legal Officer",
+      "file": "clo.jpg",
+      "format": "png",
+      "width": 930,
+      "height": 1010,
+      "style": "photoreal",
+      "status": "needs_refresh",
+      "notes": "役職名は要確認"
+    },
+    {
+      "role": "secretary",
+      "title_ja": "秘書",
+      "title_en": "Secretary",
+      "file": "secretary.jpg",
+      "format": "png",
+      "width": 1740,
+      "height": 1534,
+      "style": "felt",
+      "status": "current",
+      "notes": "フェルト風の基準画像。シリーズ中の笑顔の上限はこの 1 枚"
+    }
+  ]
+}
